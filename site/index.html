@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>boredOS</title>
+    <link rel="stylesheet" href="/main.css" type="text/css"/>
+    <script src="assets/js/three.min.js"></script>
+    <script src="assets/js/vanta.fog.min.js"></script>
+    <script src="assets/js/vanta.waves.min.js"></script>
+    <script src="bundle.js"></script>
+  </head>
+  <body>
+    <container class="slide github">
+      <img class="title" src="assets/imgs/github-icon.svg" />
+      <section class="content github-activity"></section>
+    </container>
+    <container class="slide dining hidden">
+      <div class="title">
+        <h1 class="meal"></h1>
+        <h2 class="hall"></h2>
+      </div>
+      <section class="content menu">
+
+      </section>
+    </container>
+    <container class="slide xkcd hidden">
+      <h1 class="title">XKCD</h1>
+      <section class="content">
+        <img src="" class="comic" />
+        <div class="caption">
+
+        </div>
+      </section>
+    </container>
+    <container class="slide weather hidden">
+      <h1 class="title">Weather</h1>
+      <section class="content">
+        <div class="data">
+          <div class="row temps">
+            <div class="column">
+              <div class="row">
+                <span class="temp-low"></span>
+                <span class="light">°</span>
+              </div>
+              <div class="light">low</div>
+            </div>
+            <div class="column">
+              <div class="row">
+                <span class="temp-high"></span>
+                <span class="light">°</span>
+              </div>
+              <div class="light">high</div>
+            </div>
+            <div class="column">
+              <div class="row">
+                <span class="temp-current"></span>
+                <span class="light">°</span>
+              </div>
+              <div class="light">current</div>
+            </div>
+          </div>
+          <div class="row windspeed-container">
+            <span class="windspeed"></span>
+            <span class="light">MPH</span>
+          </div>
+        </div>
+        <div class="row text">
+          <div class="column">
+            <h2>today</h2>
+            <h2>this week</h2>
+          </div>
+          <div class="column forcast">
+            <span class="today"></span>
+            <span class="this-week"></span>
+          </div>
+        </div>
+      </section>
+    </container>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+@import 'fonts';
+@import 'mixins';
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 800px;
+  height: 1280px;
+  font-family: 'Soin Sans Neue';
+  display: flex;
+  flex-direction: row;
+
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+  &.dark-background {
+    color: white;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-direction: column;
+
+  .title {
+    font-size: 350%;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  img.title {
+    opacity: 0.3;
+    width: 40%;
+    margin: 0;
+  }
+
+  .content {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.github-activity {
+  .event {
+    background-color: rgba(255, 255, 255, 0.3);
+    @include shadow;
+
+    padding: 20px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .avatar {
+      width: 40px;
+      border-radius: 100%;
+      margin-right: 20px;
+    }
+
+    .message {
+      align-self: center;
+      font-weight: 400;
+      font-size: 140%;
+      margin-right: auto;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 450px;
+    }
+
+    .time {
+      font-weight: 200;
+      font-size: 120%;
+      margin-left: 20px;
+    }
+  }
+}
+
+.dining {
+  h1 {
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 80%;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+  }
+
+  .menu {
+    @include shadow;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 5%;
+    height: auto;
+    margin-bottom: auto;
+
+    p {
+      font-size: 190%;
+      text-align: center;
+    }
+  }
+}
+
+.xkcd {
+  .content {
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: auto;
+
+    img {
+      width: 70%;
+      background-color: white;
+      @include shadow;
+      border-radius: 8px;
+      padding: 2%;
+      margin-bottom: 3%;
+    }
+
+    .caption {
+      background-color: rgba(255, 255, 255, 0.3);
+      @include shadow;
+      border-radius: 8px;
+      padding: 2%;
+      font-size: 150%;
+      max-width: 50%;
+      text-align: center;
+    }
+  }
+}
+
+.weather {
+  .content {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .temps {
+    font-weight: 600;
+    font-size: 300%;
+    justify-content: space-around;
+    margin: 0 10% 8% 10%;
+    padding: 3% 0;
+    letter-spacing: 1px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    @include shadow;
+    border-radius: 8px;
+
+    .column {
+      align-items: center;
+    }
+  }
+
+  .light {
+    font-weight: 300;
+    font-size: 75%;
+  }
+
+  .data {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .windspeed-container {
+    font-size: 300%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding: 2% 5%;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    @include shadow;
+    border-radius: 8px;
+
+    .windspeed {
+      font-weight: 600;
+      margin-right: 2%;
+    }
+
+    .light {
+      font-size: 60%;
+    }
+  }
+
+  .text {
+    font-size: 175%;
+    width: 80%;
+    margin: 10% auto auto auto;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    @include shadow;
+    border-radius: 8px;
+    padding: 4%;
+
+    .forcast > * {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .forcast {
+      margin-left: 5%;
+    }
+  }
+}
