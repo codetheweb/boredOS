@@ -126,6 +126,7 @@ body {
     border-radius: 8px;
     padding: 5%;
     height: auto;
+    width: 50%;
     margin-bottom: auto;
 
     p {
@@ -137,13 +138,14 @@ body {
 
 .xkcd {
   .content {
-    height: auto;
     justify-content: center;
     align-items: center;
     margin-bottom: auto;
 
     img {
       width: 70%;
+      max-height: 80%;
+      width: auto;
       background-color: white;
       @include shadow;
       border-radius: 8px;

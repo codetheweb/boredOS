@@ -17,7 +17,7 @@ $(document).ready(() => {
   setInterval(() => {
     slides.eq(lastSlideN % slides.length).addClass('hidden');
 
-    lastSlideN++;
+    lastSlideN ++;
 
     slides.eq(lastSlideN % slides.length).removeClass('hidden');
   }, 5000);
